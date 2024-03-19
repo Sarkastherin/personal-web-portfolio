@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&display=swap');
+
+:root {
+  --primary: #d87093; 
+  --primary-light: #fca7c3;
+  --primary-light-opacity: #fca7c393;
+  --gray-light: #ddd
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #2e2e2e;
+}
+body { 
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.nav-brand {
+  font-family: "Ojuju", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.nav-menu-link a{
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.2rem;
+}
+.nav-menu-link a:hover{
+  background-color: var(--primary-light);
+  color: white;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.btn-call-to-action {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.35rem 0.5rem;
+}
+
+.header{
+  width: 100%;
+  
+}
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+}
+.section-title {
+  font-family: "Ojuju", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  border-bottom: var(--primary) solid 3px;
+  width: fit-content;
+}
+.container-card-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.card-portfolio{
+  border: var(--gray-light) solid 1px;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px 0px var(--gray-light);
+}
+.card-portfolio:hover {
+  background-color: var(--primary-light-opacity);
+  
+}
+.card-title{
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px var(--primary);
+}
+.card-body {
+  font-size: 0.9rem;
+}
+.container-services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+.container-services li {
+  width: 250px;
+  list-style-type: none;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.container-experience {
+  max-width: 900px;
+  margin: auto;
+  
+}
+.job {
+  border: var(--gray-light) solid 1px;
+  margin-top: 20px;
+}
+.job-title {
+  margin-bottom: 20px;
+}
+.job-employed, .job-address {
+  color: #5e5c5c;
+  font-weight: 500;
+}
+.job ul {
+  margin-top: 15px;
+}
+.job li {
+  list-style-type: none;
+}
